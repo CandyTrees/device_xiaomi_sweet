@@ -42,6 +42,10 @@ PRODUCT_COPY_FILES += \
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_sweet)
 
+# KProfiles
+PRODUCT_PACKAGES += \
+    KProfiles
+
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
