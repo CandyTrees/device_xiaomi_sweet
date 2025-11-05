@@ -12,6 +12,9 @@ $(call inherit-product-if-exists, device/xiaomi/miuicamera-sweet/device.mk)
 $(call soong_config_set,camera,package_name,com.xiaomi.sessionparams.clientName)
 $(call soong_config_set,camera,override_format_from_reserved,true)
 
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
