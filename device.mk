@@ -9,6 +9,8 @@ $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
 # MiuiCamera
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-sweet/device.mk)
+$(call soong_config_set,camera,package_name,com.xiaomi.sessionparams.clientName)
+$(call soong_config_set,camera,override_format_from_reserved,true)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
