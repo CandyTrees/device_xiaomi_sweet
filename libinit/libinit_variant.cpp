@@ -40,6 +40,7 @@ void set_variant_props(const variant_info_t variant) {
     set_ro_build_prop("mod_device", variant.mod_device, true);
     property_override("ro.product.vendor.name", variant.name, true);
     property_override("vendor.usb.product_string", marketname, true);
+    property_override("ro.lunaris.maintainer", "therealmharc");
 
     if (!variant.cam_info.empty())
         property_override("persist.sys.device_camera_info_rear", variant.cam_info.c_str(), true);
