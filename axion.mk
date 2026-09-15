@@ -2,7 +2,7 @@
 # AxionAOSP-specific Flags
 #
 # Maintainer name (use "_" for spaces, e.g., "rmp_22" → "rmp 22" in UI)
-AXION_MAINTAINER := therealmharc
+AXION_MAINTAINER := therealmharc_&_paulblazer15
 
 # Processor name (underscores become spaces)
 AXION_PROCESSOR := Snapdragon_732G_(8_nm)
